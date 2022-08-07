@@ -19,7 +19,7 @@ const result = document.getElementById('output');
         weight_status = true;
     }
     if(height_status && weight_status) {
-    const bmi = (weight / ((height * height) / 1000)).toFixed(2);
+    const bmi = (weight / ((height) / 100)**2).toFixed(2);
 
         if (bmi < 18.5) {
             result.innerHTML = 'Under Weight : ' + bmi;
